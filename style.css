@@ -6,12 +6,12 @@ body {
 
 .effect-1 {
   background: linear-gradient(180deg, rgb(23, 23, 40) 12.44%, rgba(30, 58, 100, 0.03) 100%);
-  height: 3690px;
+  height: 6784px;
 }
 
 .effect {
   background: linear-gradient(180deg, rgba(35, 71, 99, 0) 16.089%, rgb(14, 52, 81) 48.583%, rgba(38, 28, 102, 0.29) 100%);
-  height: 3690px;
+  height: 6784px;
 }
 
 .container {
@@ -87,7 +87,7 @@ header {
   font-size: 15px;
 }
 .wrap-left-but:hover {
-  background: var(--42DA96, #42DA96);
+  background: linear-gradient(0deg, rgb(19, 216, 228) -24.363%, rgb(72, 101, 255) 118.272%);
 }
 
 .wrap-right-img {
@@ -100,6 +100,12 @@ header {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: inset 0px 1px 2px 0px rgba(239, 232, 232, 0.6);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background: rgba(125, 71, 143, 0.4);
+  padding: 60px;
 }
 
 .block-h1 {
@@ -164,4 +170,101 @@ header {
   font-size: 18px;
   line-height: 170%;
   font-weight: 400;
+}
+
+.block-slider-h1 {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.block-slider-hr {
+  margin: 0 auto;
+  width: 208px;
+  height: 2px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgb(72, 101, 255) -24.363%, rgb(19, 216, 228) 118.272%);
+  margin-bottom: 40px;
+}
+
+.block-slider-img {
+  background-image: url(../img/preview.png);
+  width: 1012px;
+  height: 583px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  margin-right: 10px;
+  flex: 0 0 33.33%;
+}
+
+.slide img {
+  width: 300px;
+  height: 193px;
+  border-radius: 11.26px;
+}
+.slide img:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  background-position: center center;
+}
+
+.controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.panel {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicators {
+  display: inline-block;
+}
+
+.indicator {
+  display: inline-block;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(40, 63, 79);
+  border-radius: 6px;
+  background: rgb(37, 49, 66);
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+.indicator:hover {
+  opacity: 0.8;
+}
+
+.active {
+  color: rgb(255, 255, 255);
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
