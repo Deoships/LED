@@ -269,6 +269,77 @@ button {
   opacity: 1;
 }
 
+.box {
+  margin-top: 300px;
+  width: 1220px;
+  height: 1700px;
+  border-radius: 20px;
+  box-shadow: inset 0px 1px 2px 0px rgba(239, 232, 232, 0.6);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background: rgba(83, 80, 146, 0.38);
+}
+
+.box-form {
+  padding: 100px 150px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.box-form-h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.box-form-p {
+  margin: 0 auto;
+  width: 573px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.box-form-hr {
+  width: 937px;
+  margin-top: 40px;
+  border: 1px solid rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+.box-form-wrap {
+  font-family: Montserrat;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.box-form-text {
+  margin-right: 20px;
+}
+
+.box-form-link {
+  color: rgb(115, 255, 242);
+  text-decoration: none;
+}
+
+.box-contacts-h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.box-contacts-p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.box-contacts {
+  text-align: left;
+  margin-top: 70px;
+}
+
 .feedback-form {
   margin: 0 auto;
   padding: 20px;
@@ -276,43 +347,58 @@ button {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  width: 933px;
   display: flex;
+  justify-content: space-between;
 }
 
 label {
   display: block;
-  font-weight: bold;
 }
 
 .input-field {
-  width: 410px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-right: 60px;
+  outline: none;
+  width: 44%;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: inset 0px 1px 2px 0px rgba(239, 232, 232, 0.3);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgb(220, 220, 220);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .message-field {
-  width: 900px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%;
   font-size: 16px;
   resize: none;
+  border-radius: 15px;
+  padding: 15px;
+  outline: none;
+  font-family: Montserrat;
+  font-size: 15px;
+  color: rgb(220, 220, 220);
+  font-weight: 500;
+  box-shadow: inset 0px 1px 2px 0px rgba(239, 232, 232, 0.3);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .submit-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 13px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: inset 0px 1px 2px 0px rgba(239, 232, 232, 0.6), inset 0px -4px 12px 0px rgba(0, 0, 0, 0.22);
+  background: linear-gradient(0deg, rgb(72, 101, 255) -24.363%, rgb(19, 216, 228) 118.272%);
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 15px;
 }
-
 .submit-button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(0deg, rgb(19, 216, 228) -24.363%, rgb(72, 101, 255) 118.272%);
 }/*# sourceMappingURL=style.css.map */
