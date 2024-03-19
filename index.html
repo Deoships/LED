@@ -20,14 +20,14 @@
             </div>
             <nav class="main-menu">
                 <ul class="menu-ul">
-                    <li class="menu-ul-li"><a class="menu-ul-li-a" href="#">О продукте</a></li>
-                    <li class="menu-ul-li"><a class="menu-ul-li-a" href="#">Обратная связь</a></li>
-                    <li class="menu-ul-li"><a class="menu-ul-li-a" href="#">Контакты</a></li>
+                    <li class="menu-ul-li"><a class="menu-ul-li-a" href="#product">О продукте</a></li>
+                    <li class="menu-ul-li"><a class="menu-ul-li-a" href="#feedback">Обратная связь</a></li>
+                    <li class="menu-ul-li"><a class="menu-ul-li-a" href="#contact">Контакты</a></li>
                 </ul>
             </nav>
     </header>
     <section>
-    <div class="wrap">
+    <div class="wrap" >
         <div class="wrap-left">
             <h1 class="wrap-left-h1">Инновационная технология для интерьерной и наружной рекламы</h1>
             <p class="wrap-left-p">Лучшее универсальное решение для  рекламы.</p>
@@ -38,7 +38,7 @@
         </div>
     </div>
     </section>
-    <section>
+    <section id="product">
         <div class="block">
             <div class="block-h1">Эффективная видеовитрина и 3D голограмма для вашего продукта</div>
             <div class="block-param">
@@ -83,19 +83,19 @@
                         <img src="../img/preview.png" alt="img1">
                       </div>
                       <div class="slide">
-                        <img src="../img/preview.png" alt="img1">
+                        <img src="../img/preview.png" alt="img2">
                       </div>
                       <div class="slide">
-                        <img src="../img/preview.png" alt="img1">
+                        <img src="../img/preview.png" alt="img3">
                       </div>
                       <div class="slide">
-                        <img src="../img/preview.png" alt="img1">
+                        <img src="../img/preview.png" alt="img4">
                       </div>
                       <div class="slide">
-                        <img src="../img/preview.png" alt="img1">
+                        <img src="../img/preview.png" alt="img5">
                       </div>
                       <div class="slide">
-                        <img src="../img/preview.png" alt="img1">
+                        <img src="../img/preview.png" alt="img6">
                       </div>
                     </div>
                     <div class="panel">
@@ -107,21 +107,21 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="feedback">
         <div class="box">
             <div class="box-form">
             <h1 class="box-form-h1">Обратная связь</h1>
             <p class="box-form-p">Если вас заинтересовало наше предложение напишите нам и наши менеджеры свяжуться с вами как можно быстрее</p>
             <div class="feedback-form">
-                <form action="#" method="POST">
-                  <div class="form-group">
-                    <input type="text" placeholder="Ваше имя" class="input-field" required>
-                    <input type="email" placeholder="Ваше email" class="input-field" required>
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Сообщение" class="message-field" rows="10" required></textarea>
-                  </div>
-                  <button type="submit" class="submit-button">Отправить сообщение</button>
+                <form action="../LED/php/send_email.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" class="input-field" required>
+                        <input type="email" name="email" placeholder="Ваше email" class="input-field" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Сообщение" class="message-field" rows="10" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Отправить сообщение</button>
                 </form>
                 <div class="box-form-hr"></div>
                 <div class="box-form-wrap">
@@ -129,9 +129,15 @@
                 <a class="box-form-link" href="https://t.me/rpk_effect">t.me/rpk_effect</a>
                 </div>
               </div>
-              <h1 class="box-form-h1">Где мы находимся</h1>
+              <h1 class="box-form-h1" id="contact">Где мы находимся</h1>
               <div class="box-map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae554028122bd94e4d857969bf1cd83e8124817bdb9e66559e839a9e734d34cf0&amp;width=984&amp;height=539&amp;lang=ru_RU&amp;scroll=true"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae554028122bd94e4d857969bf1cd83e8124817bdb9e66559e839a9e734d34cf0&amp;width=984&amp;height=539&amp;lang=ru_RU&amp;scroll=false"></script>
+              </div>
+              <div class="box-map-1">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae554028122bd94e4d857969bf1cd83e8124817bdb9e66559e839a9e734d34cf0&amp;width=457&amp;height=320&amp;lang=ru_RU&amp;scroll=false"></script>
+              </div>
+              <div class="box-map-2">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae554028122bd94e4d857969bf1cd83e8124817bdb9e66559e839a9e734d34cf0&amp;width=280&amp;height=299&amp;lang=ru_RU&amp;scroll=false"></script>
               </div>
               <div class="box-contacts">
               <h2 class="box-contacts-h2">Контакты рекламной компании «Эффект»</h2>
@@ -144,16 +150,38 @@
         </div>
     </div>
 <script src="../js/slider.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.submit-button').click(function(e){
+            e.preventDefault();
+            var name = $('input[name="name"]').val();
+            var email = $('input[name="email"]').val();
+            var message = $('textarea[name="message"]').val();
+            $.ajax({
+                type: 'POST',
+                url: '../LED/php/send_email.php',
+                data: {name: name, email: email, message: message},
+                success: function(response){
+                    console.log(response);
+                },
+                error: function(xhr, status, error){
+                    console.error(error);
+                }
+            });
+        });
+    });
+</script>
 </body>
 <footer>
     <div class="footer-block">
         <div class="footer-block-logo"></div>
         <div class="footer-block-info">
-            <div class="footer-block-info-tg"></div>
+            <div class="footer-block-info-tg" href="https://t.me/rpk_effect"> </div>
             <ul class="footer-block-info-ul">
-                <li class="footer-block-info-li">О продукте</li>
-                <li class="footer-block-info-li">Обратная связь</li>
-                <li class="footer-block-info-li">Контакты</li>
+                <li class="footer-block-info-li" href="#product">О продукте</li>
+                <li class="footer-block-info-li" href="#feedback">Обратная связь</li>
+                <li class="footer-block-info-li" href="#contact">Контакты</li>
             </ul>
             <p class="footer-block-info-pp">Политика конфиденциальности</p>
         </div>
