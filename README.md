@@ -1,0 +1,1 @@
+LED — a project within the company's industrial practice aimed at developing a commercial website. The main focus is on the layout and interface created for the business with an emphasis on attractive and user-friendly design
